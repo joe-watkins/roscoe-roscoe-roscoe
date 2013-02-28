@@ -1,24 +1,108 @@
-/*
-* Skeleton V1.2
-* Copyright 2011, Dave Gamache
-* www.getskeleton.com
-* Free to use under the MIT license.
-* http://www.opensource.org/licenses/mit-license.php
-* 6/20/2012
-*/
+body {background: #2C1A10; color:#FFFAEE;}
 
-/* Table of Content
-==================================================
-	#Site Styles
-	#Page Styles
-	#Media Queries
-	#Font-Face */
 
-/* #Site Styles
-================================================== */
+.top-bar {
+	$bgColor: #1E120B;
+	background: $bgColor;
+	
+	min-height: 40px;
+	padding-top:10px;
+	position: relative;
+	
+	.social-links {
+		text-align: right;
+		a { color: #fff; font-size: 14px; margin-left: 10px; }
+		a:hover { color: #F5E7C9; }
+	}
+	
+	.email-contact-info {
+		a {margin-left:7px; text-decoration: none;}
+		a:hover {text-decoration: underline;}
+	}
+
+}
+
+.top-bar:before, .top-bar > .before { position: absolute; left: -100%; right: -100%; top: 0; bottom: 0; z-index: -1; content: ' '; background: #1E120B; }
+.top-bar:after { display: block; overflow: hidden; clear: both; content: ""; width: 100%; height: 0; }
+
+
+.intro-a {
+	position: relative;
+	margin:60px 0 30px 0;
+	display: block;
+	min-height: 340px;
+
+	h1 {
+		font-size: 64px;
+		
+		span.a {color:#D6B788;}
+		span.b {color:#F5E7C9;}
+		span.c {color:#AB926D;}
+	}
+	
+	h2 {font-family: OpenSans-Italic;font-size: 24px;line-height: 33px;}
+	
+	p.lead {color:#FFFAEE;font-size:16px;}
+	
+	p.action {margin-top: 7px;margin-bottom: 0px;}
+	
+	div.download-details {
+		height:50px;
+		border-left:1px solid #5E514A; padding-left:15px;
+		
+		p {font-size:14px;}
+		
+	}
+	
+} /* intro-a */
+
+.video-a {
+	position: relative;
+	min-height: 300px;
+	
+} /* video-a */
+
+
+
+.video-a:before, .video-a > .before { position: absolute; left: -100%; right: -100%; top: 0; bottom: 0; z-index: -1; content: ' '; background: #D6B788; }
+.video-a:after { display: block; overflow: hidden; clear: both; content: ""; width: 100%; height: 0; }
+
 
 /* #Page Styles
 ================================================== */
+
+.button-a {
+	display: block;
+	text-align: center;
+	padding:5px 10px;
+	border-radius: 8px;
+	text-decoration: none;
+	font-size:14px;
+	font-weight: 600;
+
+	background: #D8D8D8;
+	
+	background-image: -o-linear-gradient(-90deg, rgba(92,198,233,0.77) 0%, #4A9BC4 100%);
+	background-image: -moz-linear-gradient(-90deg, rgba(92,198,233,0.77) 0%, #4A9BC4 100%);
+	background-image: -webkit-linear-gradient(-90deg, rgba(92,198,233,0.77) 0%, #4A9BC4 100%);
+	background-image: -ms-linear-gradient(-90deg, rgba(92,198,233,0.77) 0%, #4A9BC4 100%);
+	background-image: linear-gradient(-90deg, rgba(92,198,233,0.77) 0%, #4A9BC4 100%);
+	
+	border: 1px solid #70C3E0;
+}
+
+.button-a:hover {
+	background: #D8D8D8;
+	
+	background-image: -o-linear-gradient(-180deg, rgba(92,198,233,0.77) 0%, #4A9BC4 100%);
+	background-image: -moz-linear-gradient(-180deg, rgba(92,198,233,0.77) 0%, #4A9BC4 100%);
+	background-image: -webkit-linear-gradient(-180deg, rgba(92,198,233,0.77) 0%, #4A9BC4 100%);
+	background-image: -ms-linear-gradient(-180deg, rgba(92,198,233,0.77) 0%, #4A9BC4 100%);
+	background-image: linear-gradient(-180deg, rgba(92,198,233,0.77) 0%, #4A9BC4 100%);
+	
+	border: 1px solid #70C3E0;
+}
+
 
 /* #Media Queries
 ================================================== */
