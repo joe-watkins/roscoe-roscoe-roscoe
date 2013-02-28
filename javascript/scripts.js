@@ -40,39 +40,6 @@ head.ready(function() {
 		},
 		tweaks : {
 		
-			fancybox : function(){
-			
-				$('a.fancybox, a.fire-video-1').fancybox({
-					overlayColor: '#000',
-					overlayOpacity: .8
-				});
-				
-				
-				$('a.fancyframe').each(function(){
-					 var width      = 940;
-					 var height      = 450;
-					 var classes = $(this).attr('class');
-			
-					 var widths = classes.match(/w(\d+)/);
-					 var heights = classes.match(/h(\d+)/);
-			
-					 if(widths != null) width = parseInt(widths[1]);
-					 if(heights != null) height = parseInt(heights[1]);
-			
-					 $(this).addClass('iframe').fancybox({
-						  width: width,
-						  height: height,
-						  padding: 10,
-						  titleShow : false,
-						  overlayColor: '#000',
-						  overlayOpacity: .9,
-						  autoDimensions: false,
-						  centerOnScroll: true,
-						  showNavArrows: false
-					 })
-				});
-			}, // fancybox
-			
 			responsiveGoogleMap : function(itemWrapper){
 
 				if($(itemWrapper).size() === 0){return;}
@@ -108,12 +75,10 @@ head.ready(function() {
 
 	Engine.utils.links();
 	Engine.utils.mails();
-	Engine.utils.labels();
+
 	
 	Engine.ui.faq();
 
-	
-	Engine.tweaks.fancybox();
 	Engine.tweaks.responsiveGoogleMap(".box-a.contact-a");
 	
 	Engine.tweaks.flipShow();

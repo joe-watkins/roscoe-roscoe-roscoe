@@ -12,7 +12,7 @@ body { background: #2C1A10; color: #FFFAEE; }
 .top-bar:after { display: block; overflow: hidden; clear: both; content: ""; width: 100%; height: 0; }
 
 .intro-a { position: relative; margin: 60px 0 30px 0; display: block; min-height: 340px; }
-.intro-a h1 { font-size: 64px; }
+.intro-a h1 { font-size: 53px; }
 .intro-a h1 span.a { color: #D6B788; }
 .intro-a h1 span.b { color: #F5E7C9; }
 .intro-a h1 span.c { color: #AB926D; }
