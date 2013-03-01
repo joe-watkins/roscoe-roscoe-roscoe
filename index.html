@@ -5,12 +5,11 @@
 <!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
 <head>
 
-	<!-- Basic Page Needs
-  ================================================== -->
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<title>Roscoe, Roscoe, Roscoe - A cat that needs no introduction.</title>
-	<meta name="description" content="">
-	<meta name="author" content="">
+	<meta name="description" content="A website dedicated to a special kitty cat and good code">
+	<meta name="author" content="Joe Watkins">
 	
 	<script src="javascript/head.js"></script>
 	<script>head.js(
@@ -18,15 +17,11 @@
 		'javascript/modernizr.custom.js',
 		'javascript/jquery.flipshow.js',
 		'javascript/extras.js',
+		'javascript/smoothScroll.js',
+		'javascript/toTop.js',
 		'javascript/scripts.js'
 	);</script>
 
-	<!-- Mobile Specific Metas
-  ================================================== -->
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
-	<!-- CSS
-  ================================================== -->
 	<link rel="stylesheet" href="styles/base.css">
 	<link rel="stylesheet" href="styles/skeleton.css">
 	<link rel="stylesheet" href="styles/layout.css">
@@ -36,19 +31,14 @@
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
 
-	<!-- Favicons
-	================================================== -->
 	<link rel="shortcut icon" href="images/favicon.ico">
 	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
 	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
 	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
 	
-	
-	<!-- Web Fonts
-	================================================== -->
 	<link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="styles/font-awesome.min.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="styles/font-awesome.min.css" type="text/css" media="all">
 
 </head>
 <body>
@@ -57,87 +47,136 @@
 
 	<div class="container">
 	
-		<div class="top-bar">
+		<header class="top-bar" role="banner">
 			<div class="eight columns email-contact-info">
 				<span class="icon-envelope"><a href="mailto:info/at/joe-watkins.io">Drop me a meow!</a></span>
 			</div>
 			<div class="eight columns social-links" role="navigation">
 				<a href="#" class="icon-twitter social-link"><span class="offset">Twitter</span></a> 
-			    <a href="#" class="icon-facebook social-link"><span class="offset">Facebook</span></a> 
-			    <a href="#" class="icon-linkedin social-link"><span class="offset">LinkedIn</span></a>
-			    <a href="#" class="icon-rss social-link"><span class="offset">RSS</span></a> 
+				<a href="#" class="icon-facebook social-link"><span class="offset">Facebook</span></a> 
+				<a href="#" class="icon-linkedin social-link"><span class="offset">LinkedIn</span></a>
+				<a href="#" class="icon-rss social-link"><span class="offset">RSS</span></a> 
 			</div>
-		</div><!--// .top-bar -->
+		</header><!--// .top-bar -->
 		
-		<div class="container intro-a">
-			<div class="eight alpha columns">
-				<!-- <img src="images/intro-a.png" alt="Roscoe"> -->
-				
-				<div id="fc-slideshow" class="fc-slideshow">
-					<ul class="fc-slides">
-						<li><img src="images/flip-1.jpg" />&nbsp;</li>
-						<li><img src="images/flip-2.jpg" />&nbsp;</li>
-						<li><img src="images/flip-3.jpg" />&nbsp;</li>
-						<li><img src="images/flip-4.jpg" />&nbsp;</li>
-						<li><img src="images/flip-5.jpg" />&nbsp;</li>
+		<section role="main">
+			<div class="container intro-a">
+			
+				<div class="eight alpha columns">
+					<div id="fc-slideshow" class="fc-slideshow">
+						<ul class="fc-slides">
+							<li><img src="images/flip-1.jpg" alt="Cat Flip">&nbsp;</li>
+							<li><img src="images/flip-2.jpg" alt="Cat Flip">&nbsp;</li>
+							<li><img src="images/flip-3.jpg" alt="Cat Flip">&nbsp;</li>
+							<li><img src="images/flip-4.jpg" alt="Cat Flip">&nbsp;</li>
+							<li><img src="images/flip-5.jpg" alt="Cat Flip">&nbsp;</li>
+						</ul>
+					</div>
+				</div>
+				<div class="eight columns">
+					<hgroup>
+						<h1><span class="a">Roscoe,</span> <span class="b">Roscoe,</span> <span class="c">Roscoe</span></h1>
+						<h2>A ‘kitty cat’ who needs no introduction...</h2>
+					</hgroup>
+					<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+					
+					<div class="three alpha columns">
+						<p class="action"><a href="#" class="button-a">Download</a></p>
+					</div> 
+					<div class="five omega columns download-details"><p>Downloading  ver 1.0 will
+	include many unforgetable images</p></div> 
+					
+				</div>
+			</div><!--// .intro-a -->
+			
+			<div class="container video-a">
+				<div class="eleven columns">
+					<div class="video-wrapper">
+						<iframe src="http://player.vimeo.com/video/36820781" width="620" height="340"></iframe>
+					</div>
+				</div>
+				<div class="five columns">
+					<ul class="testimonials-a">
+						<li>
+							<blockquote>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas metus est, egestas vel aliquet at, pellentesque nec lorem. Pellentesque molestie bibendum eros, eu suscipit nisi volutpat fringilla.</p>
+								<p class="cite"><cite>by Ron Mather</cite></p>
+							</blockquote>
+						</li>
 					</ul>
 				</div>
-				
 			</div>
-			<div class="eight columns" role="main">
-				<hgroup>
-					<h1><span class="a">Roscoe,</span> <span class="b">Roscoe,</span> <span class="c">Roscoe</span></h1>
-					<h2>A ‘kitty cat’ who needs no introduction...</h2>
-				</hgroup>
-				<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
-				
-				<div class="three alpha columns">
-					<p class="action"><a href="#" class="button-a">Download</a></p>
-				</div> 
-				<div class="five omega columns download-details"><p>Downloading  ver 1.0 will
-include many unforgetable images</p></div> 
-				
+			
+			<div class="gallery-a">
+				<ul>
+					<li class="item"><img src="images/gallery/IMG_3880.jpg" alt="image"></li>				
+					<li class="item"><img src="images/gallery/IMG_3882.jpg" alt="image"></li>
+					<li class="item"><img src="images/gallery/IMG_3924.jpg" alt="image"></li>
+					<li class="item"><img src="images/gallery/IMG_3935.jpg" alt="image"></li>
+					<li class="item"><img src="images/gallery/IMG_3943.jpg" alt="image"></li>
+					<li class="item"><img src="images/gallery/IMG_3944.jpg" alt="image"></li>
+					<li class="item"><img src="images/gallery/IMG_3945.jpg" alt="image"></li>
+					<li class="item"><img src="images/gallery/IMG_3953.jpg" alt="image"></li>
+					<li class="item"><img src="images/gallery/IMG_3954.jpg" alt="image"></li>
+					<li class="item"><img src="images/gallery/IMG_3984.jpg" alt="image"></li>
+					<li class="item"><img src="images/gallery/IMG_3989.jpg" alt="image"></li>
+					<li class="item"><img src="images/gallery/IMG_3990.jpg" alt="image"></li>
+					<li class="item"><img src="images/gallery/IMG_4125.jpg" alt="image"></li>
+					<li class="item"><img src="images/gallery/IMG_4126.jpg" alt="image"></li>
+					<li class="item"><img src="images/gallery/IMG_4127.jpg" alt="image"></li>				
+				</ul>
 			</div>
-		</div><!--// .intro-a -->
+			
+	
+			<div class="contact-a">
+				<div class="six columns">
+					<h3>Daily Activities</h3>
+					<ul>
+						<li>Activity item goes here</li>
+						<li>Another item goes here</li>
+						<li>Activity item goes here item goes</li>
+						<li>Another item goes here</li>
+						<li>Activity item goes here item</li>
+						<li>Another item goes here</li>
+						<li>Activity item goes here</li>
+					</ul>
+				</div>
+				<div class="ten columns">
+					<h3>Send Roscoe a Message</h3>
+					<form class="form-a">
+						<p class="row">
+							<label for="FullName">Full Name</label>
+							<input type="text" name="FullName" id="FullName">
+						</p>
+						<p class="row">
+							<label for="EmailAddress">Email Address</label>
+							<input type="text" name="EmailAddress" id="EmailAddress">
+						</p>
+						
+						<p class="row">
+							<label for="Comments">Email Address</label>
+							<textarea name="Comments" id="Comments"></textarea>
+						</p>
+						
+						<p class="action">
+							<button type="submit" class="button-b">Submit Form</button>
+						</p>
+					
+					</form>
+				</div>
+			</div>
 		
-		<div class="container video-a">
-			video area
-		</div>
+		</section>
+
+		
+		<footer role="contentinfo">
+			<p>&copy; 2013 Roscoe, Roscoe, Roscoe | All Rights Reserved</p>
+		</footer>
 		
 		
 	</div><!--// .container -->
 	
+
 	
-	
-
-	<div class="container">
-		<div class="sixteen columns">
-			<h1 class="remove-bottom" style="margin-top: 40px">Skeleton</h1>
-			<h5>Version 1.2</h5>
-			<hr />
-		</div>
-		<div class="one-third column">
-			<h3>About Skeleton?</h3>
-			<p>Skeleton is a small collection of well-organized CSS files that can help you rapidly develop sites that look beautiful at any size, be it a 17" laptop screen or an iPhone. It's based on a responsive grid, but also provides very basic CSS for typography, buttons, forms and media queries. Go ahead, resize this super basic page to see the grid in action.</p>
-		</div>
-		<div class="one-third column">
-			<h3>Three Core Principles</h3>
-			<p>Skeleton is built on three core principles:</p>
-			<ul class="square">
-				<li><strong>A Responsive Grid Down To Mobile</strong>: Elegant scaling from a browser to tablets to mobile.</li>
-				<li><strong>Fast to Start</strong>: It's a tool for rapid development with best practices</li>
-				<li><strong>Style Agnostic</strong>: It provides the most basic, beautiful styles, but is meant to be overwritten.</li>
-			</ul>
-		</div>
-		<div class="one-third column">
-			<h3>Docs &amp; Support</h3>
-			<p>The easiest way to really get started with Skeleton is to check out the full docs and info at <a href="http://www.getskeleton.com">www.getskeleton.com.</a>. Skeleton is also open-source and has a <a href="https://github.com/dhgamache/skeleton">project on git</a>, so check that out if you want to report bugs or create a pull request. If you have any questions, thoughts, concerns or feedback, please don't hesitate to email me at <a href="mailto:hi@getskeleton.com">hi@getskeleton.com</a>.</p>
-		</div>
-
-	</div><!-- container -->
-
-
-<!-- End Document
-================================================== -->
 </body>
 </html>

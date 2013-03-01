@@ -28,7 +28,7 @@ body {background: #2C1A10; color:#FFFAEE;}
 
 .intro-a {
 	position: relative;
-	margin:60px 0 30px 0;
+	margin:60px 0 60px 0;
 	display: block;
 	min-height: 340px;
 
@@ -59,6 +59,35 @@ body {background: #2C1A10; color:#FFFAEE;}
 .video-a {
 	position: relative;
 	min-height: 300px;
+	padding:50px 0px;
+	
+	.video-wrapper {
+		background: #F5F5F3;
+		-moz-box-shadow:    0px 2px 4px 0 rgba(0,0,0,0.50);
+		-webkit-box-shadow: 0px 2px 4px 0 rgba(0,0,0,0.50);
+		box-shadow:         0px 2px 4px 0 rgba(0,0,0,0.50);
+		
+		width:	100%;
+		height: 360px;
+		
+		padding:10px;
+		
+	}
+	
+	.testimonials-a {
+		
+		margin:15px;
+		
+		blockquote {border-color:#ecd7aa;}
+		blockquote cite {color:#6e442b; font-family: "lobster",sans-serif; font-size: 20px;}
+		
+		p {font-size: 18px;line-height: 27px; color:#54321e;}
+		p:before, p:after {font-size:22px; font-weight: bold;}
+		p:before {content:open-quote;}
+		p:after {content:close-quote;}
+	}
+	
+	iframe {border: 0px;}
 	
 } /* video-a */
 
@@ -66,6 +95,58 @@ body {background: #2C1A10; color:#FFFAEE;}
 
 .video-a:before, .video-a > .before { position: absolute; left: -100%; right: -100%; top: 0; bottom: 0; z-index: -1; content: ' '; background: #D6B788; }
 .video-a:after { display: block; overflow: hidden; clear: both; content: ""; width: 100%; height: 0; }
+
+
+.gallery-a {
+	position: relative;
+	margin:40px 0 30px 0;
+	overflow: hidden;
+	
+	.item {
+      width:220px;
+	  margin: 10px;
+	  float: left;
+	  
+	  img {max-width: 220px;min-height: 180px;}
+	  
+	}
+	
+}/* .gallery-a */
+
+
+.contact-a {
+	position: relative;
+	background: #4999C3;
+	min-height: 400px;
+	padding:40px 0 30px 0px;
+	
+	h3 {margin-bottom: 25px;}
+	
+	ul {margin-left:20px;}
+	ul li {list-style-type:disc;}
+	
+	label {font: 14px/24px bold 'open sans',serif !important; }
+	textarea {width:75%; min-height: 120px;}
+	
+}
+
+.contact-a:before, .contact-a > .before { position: absolute; left: -100%; right: -100%; top: 0; bottom: 0; z-index: -1; content: ' '; background: #4999C3; }
+.contact-a:after { display: block; overflow: hidden; clear: both; content: ""; width: 100%; height: 0; }
+
+
+
+footer {
+	position: relative;
+	background: #1E120B;
+	min-height: 40px;
+	margin-bottom: -20px;
+	padding:10px 0 0 0;
+	
+	p {font-size:14px;opacity: .8}
+}
+
+footer:before, footer > .before { position: absolute; left: -100%; right: -100%; top: 0; bottom: 0; z-index: -1; content: ' '; background: #1E120B; }
+contact-a:after { display: block; overflow: hidden; clear: both; content: ""; width: 100%; height: 0; }
 
 
 /* #Page Styles
@@ -104,6 +185,77 @@ body {background: #2C1A10; color:#FFFAEE;}
 }
 
 
+.button-b {
+	border-radius: 8px;
+	background: #D8D8D8;
+	
+	background-image: -o-linear-gradient(-90deg, #D6B788 0%, #9C7C51 100%);
+	background-image: -moz-linear-gradient(-90deg, #D6B788 0%, #9C7C51 100%);
+	background-image: -webkit-linear-gradient(-90deg, #D6B788 0%, #9C7C51 100%);
+	background-image: -ms-linear-gradient(-90deg, #D6B788 0%, #9C7C51 100%);
+	background-image: linear-gradient(-90deg, #D6B788 0%, #9C7C51 100%);
+	
+	border: 0px solid #937349;
+	
+	color:#fff;
+	text-shadow: none;
+	
+	display: block;
+	text-align: center;
+	padding:10px 15px;
+	border-radius: 8px;
+	text-decoration: none;
+	font-size:12px;
+	font-weight: normal;
+
+
+}
+
+.button-b:hover {
+
+	background-image: -o-linear-gradient(-90deg, #9C7C51 0%, #D6B788 100%);
+    background-image: -moz-linear-gradient(-90deg, #9C7C51 0%, #D6B788 100%);
+    background-image: -webkit-linear-gradient(-90deg, #9C7C51 0%, #D6B788 100%);
+    background-image: -ms-linear-gradient(-90deg, #9C7C51 0%, #D6B788 100%);
+    background-image: linear-gradient(-90deg, #9C7C51 0%, #D6B788 100%);
+	
+	border: 0px solid #937349;
+	color:#fff;
+
+}
+
+
+/* Back to Top */
+/*-----------------------------------------------------------------------------------*/
+#toTop {
+    background: rgba(0, 0, 0, 0.7) url('../images/ui.totop.png') no-repeat scroll 50% 50%;
+    border: medium none;
+    position: fixed;
+    right: 15px;
+    bottom: 0;
+    display: none;
+    height: 50px;
+    width: 90px;
+    overflow: hidden;
+    text-decoration: none;
+    text-indent: -999px;
+}
+#toTopHover {
+    background: url("../images/ui.totop.png") no-repeat scroll 50% 50% #C5A97D;
+    display: block;
+    float: left;
+    height: 50px;
+    overflow: hidden;
+    width: 90px;
+}
+#toTop:active,
+#toTop:focus {
+    outline: medium none;
+    background-color: rgba(91, 194, 54, 1);
+}
+
+
+
 /* #Media Queries
 ================================================== */
 
@@ -111,32 +263,29 @@ body {background: #2C1A10; color:#FFFAEE;}
 	@media only screen and (max-width: 959px) {}
 
 	/* Tablet Portrait size to standard 960 (devices and browsers) */
-	@media only screen and (min-width: 768px) and (max-width: 959px) {}
+	@media only screen and (min-width: 768px) and (max-width: 959px) {
+		#fc-slideshow, #fc-slideshow img {width:300px; height:300px;}
+	}
 
 	/* All Mobile Sizes (devices and browser) */
 	@media only screen and (max-width: 767px) {}
 
 	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
-	@media only screen and (min-width: 480px) and (max-width: 767px) {}
+	@media only screen and (min-width: 480px) and (max-width: 767px) {
+		.top-bar > div {width:210px !important;}
+		.intro-a > div {margin-bottom:25px !important;}
+		.intro-a > div h1 {text-align: center;}
+		.intro-a .download-details  {display: none;}
+		.gallery-a .item img {max-width: 420px; min-width: 420px;}
+	}
 
 	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
-	@media only screen and (max-width: 479px) {}
+	@media only screen and (max-width: 479px) {
+		.top-bar > div {width:150px !important;}
+				.intro-a > div {margin-bottom:25px !important;}
+		.intro-a > div h1 {text-align: center;}
+		.intro-a .download-details  {display: none;}
+		#fc-slideshow, #fc-slideshow img {width:300px; height:300px;}
+		.gallery-a .item img {max-width: 300px; min-width: 300px;}
+	}
 
-
-/* #Font-Face
-================================================== */
-/* 	This is the proper syntax for an @font-face file
-		Just create a "fonts" folder at the root,
-		copy your FontName into code below and remove
-		comment brackets */
-
-/*	@font-face {
-	    font-family: 'FontName';
-	    src: url('../fonts/FontName.eot');
-	    src: url('../fonts/FontName.eot?iefix') format('eot'),
-	         url('../fonts/FontName.woff') format('woff'),
-	         url('../fonts/FontName.ttf') format('truetype'),
-	         url('../fonts/FontName.svg#webfontZam02nTh') format('svg');
-	    font-weight: normal;
-	    font-style: normal; }
-*/
