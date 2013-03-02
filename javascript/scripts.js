@@ -99,7 +99,7 @@ head.ready(function() {
 			
 			masonryGallery : function(){
 				$('.gallery-a').masonry({
-				  itemSelector: '.item',
+				  itemSelector: 'li',
 				  columnWidth: 240,
 				  isAnimated: true,
 				  animationOptions: {
@@ -112,6 +112,30 @@ head.ready(function() {
 			
 			toTop : function(){
 				$().UItoTop({ easingType: 'easeOutQuart' });
+			},
+			fancybox : function(){
+				
+				$(".gallery-a a").fancybox({
+					prevEffect	: 'none',
+					nextEffect	: 'none',
+					openEffect  : 'elastic',
+					closeEffect : 'elastic'
+				});
+			
+				$("a.fancybox").fancybox({
+					prevEffect	: 'none',
+					nextEffect	: 'none'
+				});
+			
+				$("a.fancybox-movie").fancybox({
+					'width'				: '640px',
+					'height'			: '480px',
+					'autoScale'			: false,
+					'transitionIn'		: 'none',
+					'transitionOut'		: 'none',
+					'type'				: 'iframe'
+				});
+				
 			}
 
 	
@@ -130,6 +154,7 @@ head.ready(function() {
 	Engine.tweaks.responsiveFBComments(".video-wrapper");
 	Engine.tweaks.masonryGallery();
 	Engine.tweaks.toTop();
+	Engine.tweaks.fancybox();
 
 	
 	

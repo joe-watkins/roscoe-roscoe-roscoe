@@ -109,21 +109,23 @@
 			
 			<div class="gallery-a">
 				<ul>
-					<li class="item"><img src="images/gallery/1.jpg" alt="image"></li>				
-					<li class="item"><img src="images/gallery/2.jpg" alt="image"></li>
-					<li class="item"><img src="images/gallery/3.jpg" alt="image"></li>
-					<li class="item"><img src="images/gallery/4.jpg" alt="image"></li>
-					<li class="item"><img src="images/gallery/5.jpg" alt="image"></li>
-					<li class="item"><img src="images/gallery/6.jpg" alt="image"></li>
-					<li class="item"><img src="images/gallery/7.jpg" alt="image"></li>
-					<li class="item"><img src="images/gallery/8.jpg" alt="image"></li>
-					<li class="item"><img src="images/gallery/9.jpg" alt="image"></li>
-					<li class="item"><img src="images/gallery/10.jpg" alt="image"></li>
-					<li class="item"><img src="images/gallery/11.jpg" alt="image"></li>
-					<li class="item"><img src="images/gallery/12.jpg" alt="image"></li>
-					<li class="item"><img src="images/gallery/13.jpg" alt="image"></li>
-					<li class="item"><img src="images/gallery/14.jpg" alt="image"></li>
-				
+					<li><a href="images/gallery/1.jpg" title="Roscoe on the table" rel="gallery"><img src="images/gallery/1.jpg" alt="Roscoe on the table"></a></li>				
+					<li><a href="images/gallery/2.jpg" title="Roscoe on the lawn" rel="gallery"><img src="images/gallery/2.jpg" alt="Roscoe on the lawn"></a></li>
+					<li><a href="images/gallery/3.jpg" title="Roscoe on the dinner table" rel="gallery"><img src="images/gallery/3.jpg" alt="Roscoe on the dinner table"></a></li>
+					<li><a href="images/gallery/4.jpg" title="Roscoe being cute on the table" rel="gallery"><img src="images/gallery/4.jpg" alt="Roscoe being cute on the table"></a></li>
+					<li><a href="images/gallery/5.jpg" title="Roscoe on the stairs 1" rel="gallery"><img src="images/gallery/5.jpg" alt="Roscoe on the stairs 1"></a></li>
+					<li><a href="images/gallery/6.jpg" title="Roscoe on the stairs 2" rel="gallery"><img src="images/gallery/6.jpg" alt="Roscoe on the stairs 2"></a></li>
+					<li><a href="images/gallery/7.jpg" title="Roscoe on the stairs 3" rel="gallery"><img src="images/gallery/7.jpg" alt="Roscoe on the stairs 3"></a></li>
+					<li><a href="images/gallery/8.jpg" title="Roscoe in the laundry" rel="gallery"><img src="images/gallery/8.jpg" alt="Roscoe in the laundry"></a></li>
+					<li><a href="images/gallery/9.jpg" title="Roscoe on the blanket" rel="gallery"><img src="images/gallery/9.jpg" alt="Roscoe on the blanket"></a></li>
+					<li><a href="images/gallery/10.jpg" title="Roscoe by the fire" rel="gallery"><img src="images/gallery/10.jpg" alt="Roscoe by the fire"></a></li>
+					<li><a href="images/gallery/11.jpg" title="Roscoe being lazy by the couch" rel="gallery"><img src="images/gallery/11.jpg" alt="Roscoe being lazy by the couch"></a></li>
+					<li><a href="images/gallery/12.jpg" title="Roscoe by the fire again" rel="gallery"><img src="images/gallery/12.jpg" alt="Roscoe by the fire again"></a></li>
+					<li><a href="images/gallery/13.jpg" title="Roscoe on the bed" rel="gallery"><img src="images/gallery/13.jpg" alt="Roscoe in bed"></a></li>
+					<li><a href="images/gallery/14.jpg" title="Roscoe on the rug" rel="gallery"><img src="images/gallery/14.jpg" alt="Roscoe on the rug"></a></li>
+					<li><a href="images/gallery/15.jpg" title="Roscoe chilling on the lawn" rel="gallery"><img src="images/gallery/15.jpg" alt="Roscoe chilling on the lawn"></a></li>
+					<li><a href="images/gallery/16.jpg" title="Roscoe face close" rel="gallery"><img src="images/gallery/16.jpg" alt="Roscoe face close"></a></li>
+					
 				</ul>
 			</div>
 			
@@ -143,26 +145,30 @@
 				</div>
 				<div class="ten columns">
 					<h3>Send Roscoe a Message</h3>
-					<form class="form-a">
+					<form action="/roscoe-roscoe-roscoe/contact-handle.php" onsubmit="return checkform(this);" method="post" class="form-a">
 						<p class="row">
-							<label for="FullName">Full Name</label>
-							<input type="text" name="FullName" id="FullName">
+							<label for="Full_Name">Full Name</label>
+							<input type="text" name="Full_Name" id="Full_Name">
 						</p>
 						<p class="row">
-							<label for="EmailAddress">Email Address</label>
-							<input type="text" name="EmailAddress" id="EmailAddress">
+							<label for="email_address">Email Address</label>
+							<input type="text" name="email_address" id="email_address">
 						</p>
 						
 						<p class="row">
-							<label for="Comments">Email Address</label>
-							<textarea name="Comments" id="Comments"></textarea>
+							<label for="Message">Message</label>
+							<textarea name="Message" id="Message"></textarea>
 						</p>
 						
 						<p class="action">
 							<button type="submit" class="button-b">Submit</button>
+							<input type="hidden" id="botty" name="botty" />
 						</p>
 					
 					</form>
+					<script type="text/javascript">
+function checkform(e){if(e.Full_Name.value==""){alert("Please enter your Full Name.");e.Full_Name.focus();return false}if(e.email_address.value==""){alert("Please enter your Email Address.");e.email_address.focus();return false}if(e.email_address.value==""){alert("Please enter your email_address.");e.email_address.focus();return false}var t=e.email_address.value.indexOf("@");var n=e.email_address.value.lastIndexOf(".");if(t<1||n-t<2){alert("Not A Valid Email Address!");return false}return true}
+</script>
 				</div>
 			</div>
 		
