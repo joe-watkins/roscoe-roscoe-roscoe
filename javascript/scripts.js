@@ -1,18 +1,8 @@
-/*!
- * Scripts
- *
- */
 head.ready(function() {
  "use strict";
 
 	var Engine = {
 		utils : {
-			links : function(){
-				$('a[rel*="external"]').click(function(e){
-					e.preventDefault();
-					window.open($(this).attr('href'));
-				});
-			},
 			mails : function(){
 				$('a[href^="mailto:"]').each(function(){
 					var 
@@ -24,18 +14,6 @@ head.ready(function() {
 					}
 				});
 
-			},
-			labels : function(){
-				$('#subscribe-a label').compactize();
-			}
-		},
-		ui : {
-			faq : function(){
-				$('section.faq-a li > a').click(function(e){
-					e.preventDefault();
-					$(this).toggleClass('active');
-					$(this).next('div.answer').toggle();
-				});
 			}
 		},
 		tweaks : {
@@ -63,7 +41,7 @@ head.ready(function() {
 			}, // responsiveGoogleMap
 			
 			flipShow : function(){
-			
+				// for header flip feature
 				if($("#fc-slideshow").size() === 0){return;}
 				
 				$("#fc-slideshow").flipshow({
@@ -75,29 +53,8 @@ head.ready(function() {
 				
 			}, // flipShow
 			
-			responsiveFBComments : function(iframeWrapper){
-
-			    if($(iframeWrapper).size() === 0){return;}
-			
-			    // on resize for fun
-			    $(window).resize(function() {
-			      var parentWidth = $(iframeWrapper).width();
-			      $(iframeWrapper+' iframe').each(function(){
-			        $(this).attr('style', 'border: medium none; overflow: hidden; width: ' + parentWidth +  'px');
-			      });
-			    });
-			
-			    // onload
-			    $(window).load(function() {
-			        var parentWidth = $(iframeWrapper).width();
-			        $(iframeWrapper+' iframe').each(function(){
-			            $(this).attr('style', 'border: medium none; overflow: hidden; width: ' + parentWidth +  'px');
-			        });
-			    });
-			
-			}, // responsive iframe
-			
 			masonryGallery : function(){
+				// for gallery functionality on resize
 				$('.gallery-a').masonry({
 				  itemSelector: 'li',
 				  columnWidth: 240,
@@ -111,10 +68,23 @@ head.ready(function() {
 			},
 			
 			toTop : function(){
+				// for scroll to top feature
 				$().UItoTop({ easingType: 'easeOutQuart' });
 			},
+			fancyboxTitles : function(){
+				/*	
+					Adds title data attribute to parent anchor 
+					element so that screen reader does not read alt
+					and title attribute twice
+				*/
+					
+				$('a[data-fancybox-group]').each(function() {
+				    var alt = $(this).find("img").attr("alt");
+				    $(this).attr("data-fancybox-title",alt);
+				});
+			}, 
 			fancybox : function(){
-				
+				// for fancybox gallery
 				$(".gallery-a a").fancybox({
 					prevEffect	: 'none',
 					nextEffect	: 'none',
@@ -142,20 +112,13 @@ head.ready(function() {
 		} // tweaks
 	};
 
-	Engine.utils.links();
+
 	Engine.utils.mails();
-
-	
-	Engine.ui.faq();
-
 	Engine.tweaks.responsiveGoogleMap(".box-a.contact-a");
-	
 	Engine.tweaks.flipShow();
-	Engine.tweaks.responsiveFBComments(".video-wrapper");
 	Engine.tweaks.masonryGallery();
 	Engine.tweaks.toTop();
+	Engine.tweaks.fancyboxTitles();
 	Engine.tweaks.fancybox();
 
-	
-	
 });

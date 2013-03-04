@@ -147,6 +147,8 @@ footer {
 	padding:10px 0 0 0;
 	
 	p {font-size:14px;opacity: .8}
+	
+	a.html5-validation {vertical-align: middle;}
 }
 
 footer:before, footer > .before { position: absolute; left: -100%; right: -100%; top: 0; bottom: 0; z-index: -1; content: ' '; background: #1E120B; }
