@@ -16,6 +16,7 @@ I have developed a one page site to expose some of my front-end coding abilities
 	- Flipshow
 	- Masonry
 	- UiToTop
+	- FancyBox
 - CSS Framework: Skeleton
 - PHP Programming: Contact Form
 - JavaScript Programming: Contact Form
