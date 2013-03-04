@@ -5,7 +5,7 @@ I have developed a one page site to expose some of my front-end coding abilities
 - Semantic HTML5 markup
 - Responsive Web Design
 - jQuery
-- SASS/CSS
+- Sass/CSS
 - Icon Font Usage
 - Web font Usage @font-face
 - Clean Typography
