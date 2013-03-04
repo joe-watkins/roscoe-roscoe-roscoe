@@ -14,7 +14,7 @@ I have developed a one page site to expose some of my front-end coding abilities
 - 3rd party jQuery plugin integration
 	- Flipshow
 	- Masonry
-	- Scroll to Top
+	- UiToTop
 - CSS Framework: Skeleton
 - PHP Programming: Contact Form
 - JavaScript Programming: Contact Form
