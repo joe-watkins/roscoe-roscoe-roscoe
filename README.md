@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Roscoe Roscoe Roscoe
 
 I have developed a one page site to expose some of my front-end coding abilities to share with folks. :)  Some of the features in this site, aside from a great cat,.. would be:
@@ -24,3 +25,9 @@ I have developed a one page site to expose some of my front-end coding abilities
 - IE Cross Compatibility with graceful degradation
 - Accessibility Standards Compliance
 
+=======
+roscoe-roscoe-roscoe
+====================
+
+A 1 page site exposing code quality
+>>>>>>> a86804e0d69fb36777be46227e20fb99f0857f0f
