@@ -165,7 +165,7 @@ contact-a:after { display: block; overflow: hidden; clear: both; content: ""; wi
 	font-size:14px;
 	font-weight: 600;
 
-	background: #D8D8D8;
+	background: #4D9EC7;
 	
 	background-image: -o-linear-gradient(-90deg, rgba(92,198,233,0.77) 0%, #4A9BC4 100%);
 	background-image: -moz-linear-gradient(-90deg, rgba(92,198,233,0.77) 0%, #4A9BC4 100%);
@@ -177,7 +177,7 @@ contact-a:after { display: block; overflow: hidden; clear: both; content: ""; wi
 }
 
 .button-a:hover {
-	background: #D8D8D8;
+	background: #4D9EC7;
 	
 	background-image: -o-linear-gradient(-180deg, rgba(92,198,233,0.77) 0%, #4A9BC4 100%);
 	background-image: -moz-linear-gradient(-180deg, rgba(92,198,233,0.77) 0%, #4A9BC4 100%);
@@ -191,7 +191,7 @@ contact-a:after { display: block; overflow: hidden; clear: both; content: ""; wi
 
 .button-b {
 	border-radius: 8px;
-	background: #D8D8D8;
+	background: #A7875B;
 	
 	background-image: -o-linear-gradient(-90deg, #D6B788 0%, #9C7C51 100%);
 	background-image: -moz-linear-gradient(-90deg, #D6B788 0%, #9C7C51 100%);
@@ -295,3 +295,5 @@ contact-a:after { display: block; overflow: hidden; clear: both; content: ""; wi
 		.gallery-a li img {max-width: 290px; min-width: 290px;}
 	}
 
+
+.lt-ie10 .fc-slideshow nav {display: none;}
