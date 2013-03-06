@@ -46,18 +46,27 @@
 	<div class="container">
 	
 		<header class="top-bar" role="banner">
+		
+			<nav id="skips">
+				<ul>
+					<li><a href="#nav" accesskey="n">Skip to social navigation [n]</a></li>
+					<li><a href="#content" accesskey="c">Skip to content [c]</a></li>
+					<li><a href="#footer" accesskey="f">Skip to footer [f]</a></li>
+				</ul>
+			</nav>
+		
 			<div class="eight columns email-contact-info">
 				<span class="icon-envelope"><a href="mailto:info/at/joe-watkins.io">Drop me a meow!</a></span>
 			</div>
-			<div class="eight columns social-links" role="navigation">
+			<nav class="eight columns social-links" id="nav" role="navigation">
 				<a href="#" class="icon-twitter social-link"><span class="offset">Twitter</span></a> 
 				<a href="#" class="icon-facebook social-link"><span class="offset">Facebook</span></a> 
 				<a href="#" class="icon-linkedin social-link"><span class="offset">LinkedIn</span></a>
 				<a href="#" class="icon-rss social-link"><span class="offset">RSS</span></a> 
-			</div>
+			</nav>
 		</header><!--// .top-bar -->
 		
-		<section role="main">
+		<section id="content" role="main">
 			<div class="container intro-a">
 			
 				<div class="eight alpha columns">
@@ -149,20 +158,20 @@
 					<form action="/roscoe-roscoe-roscoe/contact-handle.php" onsubmit="return checkform(this);" method="post" class="form-a">
 						<p class="row">
 							<label for="Full_Name">Full Name</label>
-							<input type="text" name="Full_Name" id="Full_Name" tabindex="1">
+							<input type="text" name="Full_Name" id="Full_Name">
 						</p>
 						<p class="row">
 							<label for="email_address">Email Address</label>
-							<input type="text" name="email_address" id="email_address" tabindex="2">
+							<input type="text" name="email_address" id="email_address">
 						</p>
 						
 						<p class="row">
 							<label for="Message">Message</label>
-							<textarea name="Message" id="Message" tabindex="3"></textarea>
+							<textarea name="Message" id="Message"></textarea>
 						</p>
 						
 						<p class="action">
-							<button type="submit" class="button-b" tabindex="4">Submit</button>
+							<button type="submit" class="button-b">Submit</button>
 							<input type="hidden" id="botty" name="botty" />
 						</p>
 					
@@ -174,7 +183,7 @@
 		</section>
 
 		
-		<footer role="contentinfo">
+		<footer id="footer"role="contentinfo">
 			<p>&copy; 2013 Roscoe, Roscoe, Roscoe | All Rights Reserved | <a href="http://validator.w3.org/check?uri=http%3A%2F%2Fjoe-watkins.io%2Froscoe-roscoe-roscoe%2F" class="html5-validation"><img src="images/html5-validation.png" alt="HTML5 Validation"></a></p>
 		</footer>
 		

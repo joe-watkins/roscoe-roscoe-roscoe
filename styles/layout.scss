@@ -1,5 +1,13 @@
 body {background: #2C1A10; color:#FFFAEE;}
 
+#skips, #skips ul { position: absolute; position: fixed; top: 50%; left: 0; z-index: 9999; list-style: none; width: 100%; margin: -30px 0 0; padding: 0; text-align: center; }
+
+#skips li { position: absolute; left: 0; top: 0; width: 100%; font: bold 5em/1 Calibri,Myriad Pro,Arial,Helvetica Neue,Helvetica,sans-serif; }
+
+#skips li a { display: -moz-inline-stack; display: inline-block; position: fixed; left: -10001px; margin: 0 auto; padding: 20px 30px; border: 1px dotted #fff; border-color: rgba(255,255,255,0.7); -moz-border-radius: 20px; -webkit-border-radius: 20px; border-radius: 20px;  background: #333; background: rgba(0,0,0,0.6); color: #fff; text-align: center; text-decoration: none; outline: none; }
+
+#skips li a:focus, #skips li a:active { position: relative; left: 0; }
+
 
 .top-bar {
 	$bgColor: #1E120B;
