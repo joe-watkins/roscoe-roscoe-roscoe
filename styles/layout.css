@@ -24,7 +24,7 @@ body { background: #2C1A10; color: #FFFAEE; }
 
 /* intro-a */
 .video-a { position: relative; min-height: 300px; padding: 50px 0px; }
-.video-a .video-wrapper { background: #F5F5F3; -moz-box-shadow: 0px 2px 4px 0 rgba(0, 0, 0, 0.5); -webkit-box-shadow: 0px 2px 4px 0 rgba(0, 0, 0, 0.5); box-shadow: 0px 2px 4px 0 rgba(0, 0, 0, 0.5); width: 100%; height: 360px; padding: 10px; }
+.video-a .video-wrapper { background: #F5F5F3; -moz-box-shadow: 0px 2px 4px 0 rgba(0, 0, 0, 0.5); -webkit-box-shadow: 0px 2px 4px 0 rgba(0, 0, 0, 0.5); box-shadow: 0px 2px 4px 0 rgba(0, 0, 0, 0.5); width: 100%; height: 369px; padding: 10px; }
 .video-a .testimonials-a { margin: 15px; }
 .video-a .testimonials-a blockquote { border-color: #ecd7aa; }
 .video-a .testimonials-a blockquote cite { color: #6e442b; font-family: "lobster",sans-serif; font-size: 20px; }

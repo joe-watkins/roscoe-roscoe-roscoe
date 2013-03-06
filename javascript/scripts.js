@@ -18,7 +18,7 @@ head.ready(function() {
 		},
 		tweaks : {
 		
-			responsiveGoogleMap : function(itemWrapper){
+			responsiveIframe : function(itemWrapper){
 
 				if($(itemWrapper).size() === 0){return;}
 			   
@@ -38,7 +38,7 @@ head.ready(function() {
 					});
 				});
 			   
-			}, // responsiveGoogleMap
+			}, // responsiveIframe
 			
 			flipShow : function(){
 				// for header flip feature
@@ -114,7 +114,7 @@ head.ready(function() {
 
 
 	Engine.utils.mails();
-	Engine.tweaks.responsiveGoogleMap(".box-a.contact-a");
+	Engine.tweaks.responsiveIframe(".video-wrapper");
 	Engine.tweaks.flipShow();
 	Engine.tweaks.masonryGallery();
 	Engine.tweaks.toTop();
