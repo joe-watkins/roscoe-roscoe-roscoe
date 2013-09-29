@@ -26,5 +26,4 @@ I have developed a one page site to expose some of my front-end coding abilities
 - IE Cross Compatibility with graceful degradation
 - Accessibility Standards Compliance
 
-* updating for Bitbucket
 
