@@ -40,7 +40,9 @@
 	<link rel="stylesheet" href="styles/font-awesome.min.css" type="text/css" media="all">
 
 </head>
-<body>
+<body class="ios7-detected">
+
+	<span class="status-bar-bump"></span>
 	
 	<div class="container">
 	
@@ -188,7 +190,24 @@
 		
 	</div><!--// .container -->
 	
+<script>
+function ios7StatusBarBump(detectedClass,statusBarElementClass) {
+  var userAgentStr = /(iPad|iPhone);.*CPU.*OS 7_\d/i,
+      statusBarHtml = "<span class="+statusBarElementClass+"></span>";
 
+      if(navigator.userAgent.match(userAgentStr)){ // is ios7
+        addElement(detectedClass,statusBarHtml);
+      }else{
+        addElement(detectedClass,statusBarHtml);
+      }
+
+      function addElement(detectedClass,statusBarHtml){
+        $('body').addClass(detectedClass).prepend(statusBarHtml);
+      }
+}
+
+ios7StatusBarBump('ios7-detected','status-bar-bump');
+</script>
 	
 </body>
 </html>

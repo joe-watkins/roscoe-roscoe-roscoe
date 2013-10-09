@@ -19,7 +19,7 @@ body {
   left: 0;
   top: 0;
   width: 100%;
-  font: bold 5em/1 Calibri, Myriad Pro, Arial, Helvetica Neue, Helvetica, sans-serif; }
+  font: bold 5em/1 Calibri,Myriad Pro,Arial,Helvetica Neue,Helvetica,sans-serif; }
 
 #skips li a {
   display: -moz-inline-stack;
@@ -28,7 +28,7 @@ body {
   left: -10001px;
   margin: 0 auto;
   padding: 20px 30px;
-  border: 1px dotted white;
+  border: 1px dotted #fff;
   border-color: rgba(255, 255, 255, 0.7);
   -moz-border-radius: 20px;
   -webkit-border-radius: 20px;
@@ -107,7 +107,7 @@ body {
     margin-bottom: 0px; }
   .intro-a div.download-details {
     height: 50px;
-    border-left: 1px solid #5e514a;
+    border-left: 1px solid #5E514A;
     padding-left: 15px; }
     .intro-a div.download-details p {
       font-size: 14px; }
@@ -196,7 +196,7 @@ body {
   .contact-a ul li {
     list-style-type: disc; }
   .contact-a label {
-    font: 14px/24px bold "open sans", serif !important; }
+    font: 14px/24px bold 'open sans',serif !important; }
   .contact-a textarea {
     width: 75%;
     min-height: 120px; }
@@ -265,7 +265,7 @@ contact-a:after {
   background-image: -webkit-linear-gradient(-90deg, rgba(92, 198, 233, 0.77) 0%, #4a9bc4 100%);
   background-image: -ms-linear-gradient(-90deg, rgba(92, 198, 233, 0.77) 0%, #4a9bc4 100%);
   background-image: linear-gradient(-90deg, rgba(92, 198, 233, 0.77) 0%, #4a9bc4 100%);
-  border: 1px solid #70c3e0; }
+  border: 1px solid #70C3E0; }
 
 .button-a:hover {
   background: #4D9EC7;
@@ -274,7 +274,7 @@ contact-a:after {
   background-image: -webkit-linear-gradient(-180deg, rgba(92, 198, 233, 0.77) 0%, #4a9bc4 100%);
   background-image: -ms-linear-gradient(-180deg, rgba(92, 198, 233, 0.77) 0%, #4a9bc4 100%);
   background-image: linear-gradient(-180deg, rgba(92, 198, 233, 0.77) 0%, #4a9bc4 100%);
-  border: 1px solid #70c3e0; }
+  border: 1px solid #70C3E0; }
 
 .button-b {
   border-radius: 8px;
@@ -387,3 +387,14 @@ contact-a:after {
     min-width: 290px; } }
 .lt-ie10 .fc-slideshow nav {
   display: none; }
+
+.ios7-detected > div {
+  margin-top: 20px; }
+
+.ios7-detected .status-bar-bump {
+  z-index: 9999;
+  height: 20px;
+  position: fixed;
+  left: 0px;
+  right: 0px;
+  background: black; }

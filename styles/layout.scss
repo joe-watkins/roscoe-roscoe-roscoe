@@ -307,3 +307,15 @@ contact-a:after { display: block; overflow: hidden; clear: both; content: ""; wi
 
 
 .lt-ie10 .fc-slideshow nav {display: none;}
+
+.ios7-detected > div {
+	margin-top:20px;
+}
+.ios7-detected .status-bar-bump {
+	z-index: 9999;
+	height:20px;
+	position: fixed;
+	left:0px;
+	right:0px;
+	background:rgba(0,0,0,1);
+}
